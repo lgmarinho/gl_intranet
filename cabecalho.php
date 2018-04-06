@@ -1,10 +1,16 @@
 <!DOCTYPE html>
+
+<head>
 <html lang="en">
+<meta charset="UTF-8">
+<title>Intranet Gaylussac</title>
 <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <link href="css/gl_intranet.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
+</head>
+
 
 <nav class="navbar navbar-default sidebar" role="navigation">
     <div class="container-fluid">
@@ -19,12 +25,12 @@
     <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><img src="img/gaylussac.jpg"><span style="font-size:16px;" class="pull-left hidden-xs showopacity"></span></li>
-        <li class="active"><a href="#">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+        <li class="active"><a href="index.php">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
        <li ><a href="#">Comunicação<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-comment"></span></a></li> 
        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuários<span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a>
           <ul class="dropdown-menu forAnimate" role="menu">
-            <li><a href="#">Incluir Usuário</a></li>
+            <li><a href="teste.php">Incluir Usuário</a></li>
             <li><a href="#">Alterar Usuário</a></li>           
           </ul>
         </li>  
@@ -44,4 +50,4 @@
     </div>
   </div>
 </nav>
-</html>
+

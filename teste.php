@@ -1,7 +1,16 @@
-<li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuários<span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a>
-          <ul class="dropdown-menu forAnimate" role="menu">
-            <li><a href="#">Incluir Usuário</a></li>
-            <li><a href="#">Alterar Usuário</a></li>           
-          </ul>
-        </li> 
+<?php require_once('cabecalho.php'); ?>
+
+<?php
+
+$types = array( 'png', 'jpg', 'jpeg', 'gif' );
+if ( $handle = opendir('C:\Users\Usuario\Desktop\Editadas') ) {
+    while ( $entry = readdir( $handle ) ) {
+        $ext = strtolower( pathinfo( $entry, PATHINFO_EXTENSION) );
+        if( in_array( $ext, $types ) ) echo $entry;
+    }
+    closedir($handle);
+}   
+
+?>
+
+<?php require_once('rodape.php'); ?>
