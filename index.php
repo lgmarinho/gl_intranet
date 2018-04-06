@@ -2,9 +2,19 @@
 
 require_once("cabecalho.php");
 
+?>
 
+<html>
 
-echo('Seja bem vindo');
+<body>
+
+	<a href="http://10.10.0.2/ramais2017.htm">Ramal</a>
+
+</body>
+</html>
+
+<?php
+
 
 
 
