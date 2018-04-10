@@ -3,30 +3,30 @@
 
 
 <div id="container">
+    <div class="table-responsive">
+        <table class="table">
+           <thead>
+            <tr>
+                <th> Formulários </th>
+            </tr>    
+           </thead>
+           <tbody>  
+             <?php
+                $path = 'arquivos/formularios/';
+                $diretorio = dir($path);
+                while($arquivo = $diretorio -> read()){
+                    if($arquivo != "." && $arquivo != ".." ){ 
+                        echo utf8_encode("<tr><td><a href='".$path.$arquivo."'>".$arquivo."</a><br /><td></tr>");
 
-<p class="display-1 text-center">Formulários</p>
-
-<table class="sortable">
-
-<?php
-
-$path = 'arquivos/formularios/';
-$diretorio = dir($path);
-
-
-while($arquivo = $diretorio -> read()){
-
-     if($arquivo != "." && $arquivo != ".." ){ 
-
-      echo utf8_encode("<a href='".$path.$arquivo."'>".$arquivo."</a><br />");
-
-     }
-}     
-$diretorio -> close();
-
-
-?>
-
+                    }
+                }     
+            $diretorio -> close();
+            ?>
+            </tbody>    
+            </thead>
+        </table>
+    </div>
 </div>
+
 
 <?php require_once('rodape.php'); ?>

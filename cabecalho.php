@@ -8,7 +8,6 @@
     <link href="css/gl_intranet.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
   </head>
 
   <body>
